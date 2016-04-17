@@ -14,6 +14,6 @@ RUN cd $SWAGGER_CODEGEN_DIR/output/typescript-angular2-swagger-codegen \
 
 WORKDIR /opt/swagger-codegen
 
-ENTRYPOINT ["java", "-cp", "modules/swagger-codegen-cli/target/swagger-codegen-cli.jar:output/typescript-angular2-swagger-codegen/target/typescript-angular2-swagger-codegen-1.0.jar", "io.swagger.codegen.SwaggerCodegen"]
+ENTRYPOINT ["java", "-cp", "modules/swagger-codegen-cli/target/swagger-codegen-cli.jar:output/typescript-angular2-swagger-codegen/target/typescript-angular2-swagger-codegen-1.1.jar", "io.swagger.codegen.SwaggerCodegen"]
 
 CMD ["help"]
